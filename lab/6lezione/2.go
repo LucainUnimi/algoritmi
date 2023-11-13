@@ -56,6 +56,9 @@ func main() {
 		a[i] = rand.Intn(10)
 	}
 	fmt.Printf("a: %v\n", a)
-	SelectionSortRec(a[:])
+	b := SelectionSortRec(a[:])
 	fmt.Printf("a: %v\n", a)
+	fmt.Printf("b: %v\n", b)
+	fmt.Printf("&a: %p\n", &a)
+	fmt.Printf("&b: %p\n", b)
 }

@@ -1,2 +1,2 @@
 # algoritmi
-Algoritms course in [Unimi](https://informatica.cdl.unimi.it/it)
+Algorithms course in [Unimi](https://informatica.cdl.unimi.it/it)
