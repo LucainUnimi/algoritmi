@@ -8,6 +8,9 @@ import (
 	"strings"
 )
 
+func check(heightmap [][]int, posx, posy int, all_size []int, size int) []int {
+}
+
 func main() {
 	var heightmap [][]int
 	scanner := bufio.NewScanner(os.Stdin)
@@ -20,5 +23,13 @@ func main() {
 		}
 		heightmap = append(heightmap, lineint)
 	}
-	fmt.Printf("heightmap: %v\n", heightmap)
+	/*
+		for i := 0; i < len(heightmap); i++ {
+			for j := 0; j < len(heightmap[0]); j++ {
+				fmt.Printf("%d ", heightmap[i][j])
+			}
+			fmt.Println()
+		}
+	*/
+	fmt.Printf("check(heightmap, len(heightmap)-1, len(heightmap[0])-1, 0): %v\n", check(heightmap, 0, 0, 0))
 }
